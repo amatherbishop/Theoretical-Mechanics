@@ -1,0 +1,97 @@
+\documentclass[11pt,letterpaper,boxed]{../hmcpsetrhino}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\half}{\frac{1}{2}}
+\newcommand*\Eval[3]{\left.#1\right\rvert_{#2}^{#3}}
+\newcommand{\eval}{\biggr\rvert}
+\newcommand\Partial[2]{\frac{\partial #1}{\partial #2}}
+\let\oldvec\vec
+\renewcommand{\vec}[1]{\oldvec{\mathbf{#1}}}
+\def\EE{{\cal E}}
+\def\Lagr{\mathcal{L}}
+\def\Ham{\mathcal{H}}
+
+\name{}
+\class{Physics 111 Section 1}
+\assignment{Problem Set 11}
+\duedate{October 24, 2016}
+
+\begin{document}
+
+\problemlist{Rotational Motion: Inertia Tensor}
+\textbf{Help:} 
+
+\begin{problem}[i]
+Find the moment of inertia for a box of chocolate. "Mmmmmm, chocolate." Be sure to find $I_{xz}$, $I_{yz}$, and $I_{zz}$, noting that the first two of these can be found by inspection.
+
+\begin{problem}[10.12]
+A triangular prism (like a box of Toblerone) of mass $M$, whose two ends are equilateral triangles parallel to the $xy$ plane with side $2a$, is centered on the origin with its axis along the $z$ axis. Find its moment of inertia for rotation about the $z$ axis. Without doing any integrals write down and explain its two products of inertia for rotation about the $z$ axis.
+
+\end{problem}
+\end{problem}
+\begin{solution}
+\vfill
+\end{solution}
+
+\newpage 
+
+\begin{problem}[ii]
+The generalized parallel-axis theorem.
+
+\begin{problem}[10.24]
+\begin{enumerate}[(a)]
+\item If $\mathbf{I}^{\text{cm}}$ denotes the moment of inertia tensor of a rigid body (mass $M$) about its CM, and $\mathbf{I}$ the corresponding tensor about a point $P$ displaced from the CM by $\Delta = (\xi, \eta, \zeta)$, prove that 
+\[	I_{xx} = I_{xx}^{\text{cm}} + M(\eta^2 + \zeta^2) \qquad \text{and} \qquad I_{yz} = I_{yz}^{\text{cm}} - M \eta \zeta\]
+and so forth. (These results, which generalize the parallel-axis theorem that you probably learned in introductory physics, mean that once you know the inertia tensor for rotation about the CM, calculating it for any other origin is trivially easy.)
+
+\item Confirm that the results of Example 10.2 (page 381) fulfill the identities above so that the calculations of part (a) of the example were actually unnecessary.
+\end{enumerate}
+
+\end{problem}
+\end{problem}
+\begin{solution}
+\vfill
+\end{solution}
+
+
+\newpage
+
+\begin{problem}[iii]
+Moment of inertia tensor for a uniform cuboid.
+
+\begin{problem}[10.25]
+\begin{enumerate}[(a)]
+\item Find all nine elements of the moment of inertia tensor with respect to the CM of a uniform cuboid (a rectangle brick shape) whose sides are $2a$, $2b$, and $2c$ in the $x$, $y$, and $z$ directions and whose mass is $M$. Explain clearly why you could write down the off-diagonal elements without doing any integration. 
+
+\item Combine the results of part (a) and Problem 10.24 to find the moment of inertia tensor of the same cuboid with respect to the corner A at $(a, b, c)$.
+
+\item What is the angular momentum about $A$ if the cuboid is spinning with angular velocity $\omega$ around the edge through $A$ and parallel to the $x$ axis?
+
+\end{enumerate}
+
+\end{problem}
+\end{problem}
+\begin{solution}
+\vfill
+\end{solution}
+
+
+\newpage
+
+\begin{problem}[iv]
+Find the moment of inertia for an ice cream cone. "Mmmmmm, ice cream." This problem has the same geometry as shown in example 10.3
+
+\begin{problem}[10.27]
+Find the inertia tensor for a uniform this hollow cone, such as an ice-cream cone, of mass $M$, height $h$, and base radius $R$, spinning about its pointed end.
+
+\end{problem}
+\end{problem}
+\begin{solution}
+\vfill
+\end{solution}
+\end{document}

@@ -1,0 +1,102 @@
+\documentclass[11pt,letterpaper,boxed]{../hmcpsetrhino}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\half}{\frac{1}{2}}
+\newcommand*\Eval[3]{\left.#1\right\rvert_{#2}^{#3}}
+\newcommand{\eval}{\biggr\rvert}
+\newcommand\Partial[2]{\frac{\partial #1}{\partial #2}}
+\let\oldvec\vec
+\renewcommand{\vec}[1]{\oldvec{\mathbf{#1}}}
+\def\EE{{\cal E}}
+\def\Lagr{\mathcal{L}}
+\def\Ham{\mathcal{H}}
+
+\name{}
+\class{Physics 111 Section 1}
+\assignment{Problem Set 07}
+\duedate{October 3, 2016}
+
+\begin{document}
+
+\problemlist{Central Forces: Effective Potential}
+\textbf{Help:} 
+
+\begin{problem}[i]
+Properties of a zero-curl force\\
+\begin{problem}[4.43]
+In Section 4.8, I claimed that a force $\vec F(\vec r)$ that is central and spherically symmetric is automatically conservative. Here are two ways to prove it:
+\begin{enumerate}[(a)]
+\item Since $\vec F (\vec r)$ is central and spherically symmetric, it must have the form $\vec F(\vec r) = f(r) \hat r$. Using Cartesian coordinates, show that this implies that $\nabla \times \vec F = 0$.
+\item Even quicker, using the expression given inside the back cover for $\nabla \times \vec F$ in spherical polars, show that $\nabla \times \vec F = 0$.
+\end{enumerate}
+\end{problem}
+\vspace{-0.45cm}
+\end{problem}
+\begin{solution}
+
+
+\vfill
+\end{solution}
+
+\newpage 
+
+\begin{problem}[ii]
+Two particles joined by a massless spring\\
+\begin{problem}[8.3]
+Two particles of masses $m_1$ and $m_2$ are joined by a massless spring of natural length $L$ and force constant $k$. Initially, $m_2$ is resting on a table and I am holding $m_1$ vertically above $m_2$ at a height $L$. At time $t=0$, I project $m_1$ vertically upward with initial velocity $v_0$. Find the positions of the two masses at any subsequent time $t$ (before either mass returns to the table) and describe the motion. [\textit{Hints}: See problem 8.2. Assume that $v_0$ is small enough that the two masses never collide.]
+\end{problem}
+\vspace{-0.45cm}
+\end{problem}
+\begin{solution}
+
+
+\vfill
+\end{solution}
+
+
+\newpage
+
+\begin{problem}[iii]
+Effective potential for Hooke's law\\
+\begin{problem}[8.13]
+Two particles whose reduced mass is $\mu$ interact via a potential energy $U = \half k r^2$, where $r$ is the distance between them.
+\begin{enumerate}[(a)]
+\item Make a sketch showing $U(r)$, the centrifugal potential energy $U_{cf}(r)$, and the effective potential energy $U_{eff}(r)$. (Treat the angular momentum $l$ as a known, fixed constant.)
+\item Find the "equilibrium" separation $r_0$, the distance at which the two particles can circle each other with constant $r$. [\textit{Hint}: This requires that $dU_{eff}/dr$ be zero.] 
+\item By making a Taylor expansion of $U_{eft}(r)$ about the equilibrium point $r_0$ and neglecting all terms in $(r-r_0)^3$ and higher, find the frequency of small oscillations about the circular orbit if the particles are disturbed a little from separation $r_0$.
+\end{enumerate}
+\end{problem}
+\vspace{-0.45cm}
+\end{problem}
+
+\begin{solution}
+
+\vfill
+\end{solution}
+
+\newpage
+
+\begin{problem}[iv]
+Effective potential for closed orbits. Hint: you should be able to show that 
+\[	U''(r_0) = \frac{(n+2)l^2}{\mu {r_0}^4}\]
+\begin{problem}[8.14]
+Consider a particle of reduced mass $\mu$ orbiting in a central force with $U = kr^n$ where $kn > 0$.
+\begin{enumerate}[(a)]
+\item Explain what the condition $kn > 0$ tells us about the force. Sketch the effective potential energy $U_{eff}$ for the cases that $n =2, -1$, and $-3$.
+\item Find the radius at which the particle (with given angular momentum $l$) can orbit at a fixed radius. For what values of $n$ is this circular orbit stable? Do your sketches confirm this conclusion?
+\item For the stable case, show that the period of small oscillations about the circular orbit is $\tau_{osc} = \tau_{orb}/\sqrt{n+2}$. Argue that if $\sqrt{n+2}$ is a rational number, these orbits are closed. Sketch them for the cases that $n = 2, -1$, and 7.
+\end{enumerate}
+\end{problem}
+\vspace{-0.45cm}
+\end{problem}
+
+\begin{solution}
+
+\vfill
+\end{solution}
+\end{document}

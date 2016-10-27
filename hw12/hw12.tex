@@ -1,0 +1,83 @@
+\documentclass[11pt,letterpaper,boxed]{../hmcpsetrhino}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\half}{\frac{1}{2}}
+\newcommand*\Eval[3]{\left.#1\right\rvert_{#2}^{#3}}
+\newcommand{\eval}{\biggr\rvert}
+\newcommand\Partial[2]{\frac{\partial #1}{\partial #2}}
+\newcommand\mat[1]{\underline{\vec {#1}}}
+\newcommand\tp[1]{\widetilde {#1}}
+\def\EE{{\cal E}}
+\def\Lagr{\mathcal{L}}
+\def\Ham{\mathcal{H}}
+
+\name{}
+\class{Physics 111 Section 1}
+\assignment{Problem Set 12}
+\duedate{October 26, 2016}
+
+\begin{document}
+
+\problemlist{Rotational Motion: Principal Axes}
+\textbf{Help:} \\
+\begin{problem}[i]
+Kinetic energy and the inertia tensor. This problem is a little heavy on vector algebra for my taste, but the result is important and we will rely on it later. So...
+
+\begin{problem}[10.33]
+Here is a good exercise in vector identities and matrices, leading to some important general results:
+\begin{enumerate}[(a)]
+\item For a rigid body made up of particles of mass $m_\alpha$, spinning about an axis through the origin with angular velocity $\omega$, prove that its total kinetic energy can be written as 
+\[	T = \half \sum m_\alpha \left[ (\omega r_\alpha)^2 - (\vec \omega \cdot \vec r_\alpha)^2 \right]\]
+Remember that $\vec v_\alpha = \vec \omega \times \vec r_\alpha$. You may find the following vector identity useful: For any two vectors $\vec a$ and $\vec b$,
+\[	(\vec a \times \vec b)^2 = a^2 b^2 - (\vec a \cdot \vec b)^2 \]
+(If you use the identity, please prove it.)
+
+\item Prove that the angular momentum $\vec L$ of the body can be written as 
+\[	\vec L = \sum m_\alpha \left[\vec \omega r_\alpha^2 - \vec r_\alpha (\vec \omega \cdot \vec r_\alpha)\right]\]
+
+For this you will need the so-called $B A C - CAB$ rule, that $\vec A \times (\vec B \times \vec C) = \vec B(\vec A \cdot \vec C) - \vec C(\vec A \cdot B)$.
+
+\item Combine the results of parts (a) and (b) to prove that 
+\[	T = \half \vec \omega \cdot \vec L = \half \widetilde{\vec \omega} \vec I \vec \omega\]
+Prove both equalities. The last expression is a matrix product: $\vec \omega$ denotes the $3 \times 1$ column of numbers $\omega_x, \omega_y, \omega_z$, the tilde on $\widetilde{ \vec \omega}$ denotes the matrix transpose (in this case a row), and $\vec I$ is the moment of inertia tensor. This result is actually quite important; it corresponds to the much more obvious result that for a particle, $T = \half \vec v \cdot \vec p$. 
+
+\item Show that with respect to the principal axes, $T = \half (\lambda_1 {\omega_1}^2 + \lambda_2 {\omega_2}^2 + \lambda_3 {\omega_3}^2)$, as in Equation (10.68).
+\end{enumerate}
+
+\end{problem}
+\end{problem}
+\begin{solution}
+
+\vfill
+\end{solution}
+
+\newpage 
+
+\begin{problem}[ii]
+Properties of eigenvectors and eigenvalues for symmetric, real matrices. This is a problem that you probably already did in linear algebra (feel free to revisit your notes, problem sets, and text from that class). However, it's worth reminding yourself of these results; we will make use of them going forward, and you will use them next semester in Big Quantum (116) all of the time.
+
+\begin{problem}[10.38]
+Suppose that you have found three independent principal axes (directions $\vec e_1, \vec e_2, \vec e_3$) and corresponding principal moments $\lambda_1, \lambda_2, \lambda_3$ of a rigid body whose moment of inertia tensor $\vec I$ (not diagonal) you had calculated. (You may assume, what is actually fairly easy to prove, that all of the quantities concerned are real.)
+\begin{enumerate}[(a)]
+\item Prove tha if $\lambda_i \neq \lambda_j$ then it is automatically the case that $\vec e_i \cdot \vec e_j = 0$. (It may help to introduce a notation that distinguishes between vectors and matrices. For example, you could use an underline to indicate a matrix, so that $\mat a$ is the $3 \times 1$ matrix that represents the vector $\vec a$, and the vector scalar product $\vec a \cdot \vec b$ is the same as the matrix product $\tp{\mat a}\,  \mat b$ or $\tp{\mat b}\, \mat a$. Then consider the number $\tp{\mat e}_i\, \mat I \, \mat e_j$, which can be evaluated in two ways using the fact that both $\vec e_i$ and $\vec e_j$ are eigenvectors of $\vec I$.)
+
+\item Use the result of part (a) to show that if the three principal moments are all different, then the directions of three principal axes are uniquely determined. 
+
+\item Prove that if two of the principal moments are equal, $\lambda_1 = \lambda_2$ say, then any direction in the plane of $\vec e_1$ and $\vec e_2$ is also a principal axis with the same principal moment. In other words, when $\lambda_1 = \lambda_2$ the corresponding principal axes are not uniquely determined.
+
+\item Prove that if all three principal moments are equal, then \textit{any} axis is a principal axis with the same principal moment.
+\end{enumerate}
+\end{problem}
+\end{problem}
+\begin{solution}
+
+\vfill
+\end{solution}
+
+
+\end{document}
